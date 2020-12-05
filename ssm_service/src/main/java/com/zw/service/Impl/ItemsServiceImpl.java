@@ -39,7 +39,7 @@ public class ItemsServiceImpl implements ItemsService {
 
         //测试事务，如果出错，是否回滚
         //int q=10/0;
-
+        System.out.println(acount);
         return acount;
     }
 }

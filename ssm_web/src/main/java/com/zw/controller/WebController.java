@@ -31,7 +31,6 @@ public class WebController {
         List<Items> items = itemsService.findAll();
         //存入回显
         model.addAttribute("items",items);
-        System.out.println(items);
         return "items";
     }
 
@@ -44,6 +43,7 @@ public class WebController {
     public String save(Items items){
         int acount =  itemsService.save(items);
         //集合列表页跳转
+        System.out.println(acount);
         return "redirect:/items/list";
     }
 
