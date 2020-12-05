@@ -31,6 +31,7 @@ public class WebController {
         List<Items> items = itemsService.findAll();
         //存入回显
         model.addAttribute("items",items);
+        System.out.println(items);
         return "items";
     }
 
